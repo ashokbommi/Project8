@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Bar</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+h1 {
+    text-align: center;
+}        
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+.nav-links a {
+    color:white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    color: lavenderblush;
+    background-color: mediumvioletred; /* Background color on hover */
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+               
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="logininput">Login</a></li>
+                <li><a href="registerinput">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to My Website</h1>
+        <p>
+            Django (web framework)
+
+Article
+Talk
+Read
+Edit
+View history
+
+Tools
+Appearance hide
+Text
+
+Small
+
+Standard
+
+Large
+Width
+
+Standard
+
+Wide
+Color (beta)
+
+Automatic
+
+Light
+
+Dark
+From Wikipedia, the free encyclopedia
+For other uses, see Django (disambiguation).
+
+The default Django page
+Original author(s)	Adrian Holovaty, Simon Willison
+Developer(s)	Django Software Foundation[1]
+Initial release	21 July 2005; 19 years ago[2]
+Stable release	
+5:	5.0.7[3] Edit this on Wikidata / 9 July 2024; 41 days ago
+Repository	
+github.com/django/django Edit this at Wikidata
+Written in	Python[1]
+Size	8.9 MB[4]
+Type	Web framework[1]
+License	3-clause BSD[5]
+Website	www.djangoproject.com 
+Django (/ˈdʒæŋɡoʊ/ JANG-goh; sometimes stylized as django)[6] is a free and open-source, Python-based web framework that runs on a web server. It follows the model–template–views (MTV) architectural pattern.[7][8] It is maintained by the Django Software Foundation (DSF), an independent organization established in the US as a 501(c)(3) non-profit.
+
+Django's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and "pluggability" of components, less code, low coupling, rapid development, and the principle of don't repeat yourself.[9] Python is used throughout, even for settings, files, and data models. Django also provides an optional administrative create, read, update and delete interface that is generated dynamically through introspection and configured via admin models.
+
+Some well-known sites that use Django include Instagram,[10] Mozilla,[11] Disqus,[12] Bitbucket,[13] Nextdoor[14] and Clubhouse.[15]
+
+History
+Django was created in the autumn of 2003, when the web programmers at the Lawrence Journal-World newspaper, Adrian Holovaty and Simon Willison, began using Python to build applications. Jacob Kaplan-Moss was hired early in Django's development shortly before Simon Willison's internship ended.[16] It was released publicly under a BSD license in July 2005. The framework was named after guitarist Django Reinhardt.[17] Adrian Holovaty is a Romani jazz guitar player inspired in part by Reinhardt's music.[18]
+
+In June 2008, it was announced that a newly formed Django Software Foundation (DSF) would maintain Django in the future.[19]
+
+Features
+Components
+
+Screenshot of the Django admin interface for modifying a user account
+Despite having its own nomenclature, such as naming the callable objects generating the HTTP responses "views",[7] the core Django framework can be seen as an MVC architecture.[8] It consists of an object-relational mapper (ORM) that mediates between data models (defined as Python classes) and a relational database ("Model"), a system for processing HTTP requests with a web templating system ("View"), and a regular-expression-based URL dispatcher ("Controller").
+
+Also included in the core framework are:
+
+a lightweight and standalone web server for development and testing
+a form serialization and validation system that can translate between HTML forms and values suitable for storage in the database
+a template system that utilizes the concept of inheritance borrowed from object-oriented programming
+a caching framework that can use any of several cache methods
+support for middleware classes that can intervene at various stages of request processing and carry out custom functions
+an internal dispatcher system that allows components of an application to communicate events to each other via pre-defined signals
+an internationalization system, including translations of Django's own components into a variety of languages
+a serialization system that can produce and read XML and/or JSON representations of Django model instances
+a system for extending the capabilities of the template engine
+an interface to Python's built-in unit test framework
+Bundled applications
+The main Django distribution also bundles a number of applications in its "contrib" package, including:
+
+an extensible authentication system
+the dynamic administrative interface
+tools for generating RSS and Atom syndication feeds
+a "Sites" framework that allows one Django installation to run multiple websites, each with their own content and applications
+tools for generating Sitemaps
+built-in mitigation for cross-site request forgery, cross-site scripting, SQL injection, password cracking and other typical web attacks, most of them turned on by default[20][21]
+a framework for creating geographic information system (GIS) applications
+Extensibility
+
+This section relies excessively on references to primary sources. Please improve this section by adding secondary or tertiary sources.
+Find sources: "Django" web framework – news · newspapers · books · scholar · JSTOR (January 2015) (Learn how and when to remove this message)
+Django's configuration system allows third party code to be plugged into a regular project, provided that it follows the reusable app[22] conventions. More than 5000 packages[23] are available to extend the framework's original behavior, providing solutions to issues the original tool didn't tackle: registration, search, API provision and consumption, CMS, etc.
+
+This extensibility is, however, mitigated by internal components' dependencies. While the Django philosophy implies loose coupling,[24] the template filters and tags assume one engine implementation, and both the auth and admin bundled applications require the use of the internal ORM. None of these filters or bundled apps are mandatory to run a Django project, but reusable apps tend to depend on them, encouraging developers to keep using the official stack in order to benefit fully from the apps ecosystem.
+
+Server arrangements
+Django can be run in conjunction with Apache, Nginx using WSGI, Gunicorn, or Cherokee using flup (a Python module).[25][26] Django also includes the ability to launch a FastCGI server, enabling use behind any web server which supports FastCGI, such as Lighttpd or Hiawatha. It is also possible to use other WSGI-compliant web servers.[27] Django officially supports five database backends: PostgreSQL, MySQL, MariaDB, SQLite, and Oracle.[28] Microsoft SQL Server can be used with django-mssql while similarly external backends exist for IBM Db2,[29] SQL Anywhere[30] and Firebird.[31] There is a fork named django-nonrel, which supports NoSQL databases, such as MongoDB and Google App Engine's Datastore.[32]
+
+Django may also be run in conjunction with Python on any Java EE application server such as GlassFish or JBoss. In this case django-jython must be installed in order to provide JDBC drivers for database connectivity, which also can provide functionality to compile Django in to a .war suitable for deployment.[33]
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
